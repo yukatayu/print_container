@@ -10,6 +10,8 @@ template <class K, class V>
 void multi_out_impl(std::ostream &os, std::pair<K, V> p);
 template <class T>
 void multi_out_impl(std::ostream &os, T v);
+template <class... Args>
+void multi_out_impl(std::ostream &os, std::tuple<Args...> t);
 
 // vector, set, etc...
 template <template <class...> class container, class T, class... Args>

@@ -26,7 +26,8 @@ int main(){
     std::vector<std::vector<int>> ivv = {{1,2,3}, {4,5,6}, {7,8,9}};
     std::vector<std::vector<string>> svv = {{"a","b","c"}, {"d","e","f"}, {"g","h","i"}};
     
-    std::tuple<std::string, int, float> t = {"abc", 5, 3.14};
+    std::tuple<std::string, int, float> t1 = {"abc", 5, 3.14};
+    std::tuple<std::tuple<std::string, float>, int, float> t2 = {{"abc", 2.718}, 5, 3.14};
 
     out(i);  // i = 5
     out(s);  // s = abc
@@ -43,5 +44,6 @@ int main(){
     out(ivv);  // ivv = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } }
     out(svv);  // svv = { { a, b, c }, { d, e, f }, { g, h, i } }
     
-    out(t);  // t = ( abc, 5, 3.14 )
+    out(t1);  // t1 = ( abc, 5, 3.14 )
+    out(t2);  // t2 = ( ( abc, 2.718 ), 5, 3.14 )
 }
