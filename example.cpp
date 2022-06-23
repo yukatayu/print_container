@@ -28,20 +28,20 @@ int main(){
     
     std::tuple<std::string, int, float> t = {"abc", 5, 3.14};
 
-    out(i);
-    out(s);
+    out(i);  // i = 5
+    out(s);  // s = abc
     
-    out(iv);
-    out(sv);
+    out(iv);  // iv = { 2, 3, 4 }
+    out(sv);  // sv = { def, ghi }
     
-    out(is);
-    out(ss);
+    out(is);  // is = { 2, 3, 4 }
+    out(ss);  // ss = { def, ghi }
     
-    out(im);
-    out(sm);
+    out(im);  // im = { ( 10, ten ), ( 11, eleven ), ( 12, twelve ) }
+    out(sm);  // sm = { ( alice, ( 41, 42 ) ), ( bob, ( 51, 52 ) ) }
     
-    out(ivv);
-    out(svv);
+    out(ivv);  // ivv = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } }
+    out(svv);  // svv = { { a, b, c }, { d, e, f }, { g, h, i } }
     
     // out(t);  tuple は未対応
 }
