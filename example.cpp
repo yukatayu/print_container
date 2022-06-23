@@ -14,13 +14,13 @@ int main(){
     int i = 5;
     string s = "abc";
     
-    vector<int> iv = { 2, 3, 4 };
+    vector<int> iv = {2, 3, 4};
     vector<string> sv = {"def", "ghi"};
     
-    set<int> is = { 2, 3, 4 };
+    set<int> is = {2, 3, 4};
     set<string> ss = {"def", "ghi"};
     
-    map<int,string> im = { {10,"ten"}, {11,"eleven"}, {12,"twelve"} };
+    map<int,string> im = {{10,"ten"}, {11,"eleven"}, {12,"twelve"}};
     map<string, pair<int,int>> sm = {{"alice"s,make_pair(41,42)}, {"bob"s,make_pair(51,52)}};
     
     std::vector<std::vector<int>> ivv = {{1,2,3}, {4,5,6}, {7,8,9}};
