@@ -43,5 +43,5 @@ int main(){
     out(ivv);  // ivv = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } }
     out(svv);  // svv = { { a, b, c }, { d, e, f }, { g, h, i } }
     
-    // out(t);  tuple は未対応
+    out(t);  // t = ( abc, 5, 3.14 )
 }
