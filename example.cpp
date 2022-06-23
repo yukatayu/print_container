@@ -4,6 +4,7 @@
 #include <queue>
 #include <set>
 #include <map>
+#include <tuple>
 
 #include "print_container.hpp"
 
@@ -25,6 +26,8 @@ int main(){
     std::vector<std::vector<int>> ivv = {{1,2,3}, {4,5,6}, {7,8,9}};
     std::vector<std::vector<string>> svv = {{"a","b","c"}, {"d","e","f"}, {"g","h","i"}};
     
+    std::tuple<std::string, int, float> t = {"abc", 5, 3.14};
+
     out(i);
     out(s);
     
@@ -39,4 +42,6 @@ int main(){
     
     out(ivv);
     out(svv);
+    
+    // out(t);  tuple は未対応
 }
